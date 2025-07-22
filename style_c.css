@@ -1,0 +1,150 @@
+
+body {
+
+font-family: 'Segoe UI', sans-serif;
+margin:  0;
+padding: 0;
+background: #f9f9f9;
+color: #333;
+}
+.header{
+    background:#1a1919;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1rem ;
+    position: relative;
+}
+
+.t{
+text-align: center;
+margin-bottom: 3rem;
+padding: 0%;
+font-family: Edwardian Script ITC,Harlow Solid Italic;
+font-size:70px;
+margin: 0%;
+}
+
+.t span{
+    color: red;
+}
+
+.nav-toggle{
+    display: none;
+    flex-direction: coloum;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-toggle div{
+    width: 25px;
+    height: 3px;
+    background-color: #f9f9f9;
+}
+
+.nav {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+   border: #fff;
+    /* margin: 10; */
+    display: flex;
+    padding: 2rem;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.nav a::after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s;
+}
+
+.nav a:hover::after{
+    width: 100%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+
+   
+}
+
+
+
+/* footer section */
+footer{
+    background: black;
+    color: #fff;
+    padding: 40px 5% 20px;
+
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-link, .footer-contact{
+    min-width: 200px;
+}
+
+.footer-link h3, .footer-contact h3{
+
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+.footer-link  li{
+    margin-bottom: 8px;
+    list-style: none;
+}
+
+.footer-link  li a{
+    color: #bbb;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-link  li a :hover{
+    color: #fff;
+}
+
+.footer-contact p{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.footer-bottom{
+    text-align: center;
+border-width:  1px solid #333;
+padding-top: 15px;
+margin-top: 20px;
+font-size: 13px;
+color: #aaa;
+
+}
+
+.footer-logo span{
+    color:rgb(14, 107, 164);
+}

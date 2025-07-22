@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>courese details</title>
+    <link rel="stylesheet" href="style_c.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<boby>
+    <header class="header">
+        <div class="t">
+            <h2><span>C</span>reation</h2>
+            <!-- <img src="creation.png" alt="logo" height="50" width="15%" style="padding-top: 2rem;box-shadow: 1000px;">--> 
+        </div> 
+        
+        <!-- <div class="nav-toggle" id="navToggle">
+            
+        </div> -->
+       
+        <nav class="nav" id="navMenu">
+          
+            <a href="indexc.html">Home</a>
+           <a href="About.html">About US</a>
+            <a href="bags.html">Bags </a>
+            <a href="Dress.html">Dresses </a>
+           <a href="Jew.html">Jwellary</a>
+                      <a href="perf.html"> Prefumes</a>
+
+                      <a href="contact.html">Contact Us</a>
+
+
+
+        </nav>
+    </header>
+   
+  <br>
+  <br>
+  <br>
+  <br>
+
+<form onsubmit="call(); return false;" class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md space-y-6">
+  <div>
+    <label for="email" class="block text-sm font-medium text-gray-700">Enter email</label>
+    <input type="email" id="email" placeholder="Enter email id" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+  </div>
+
+  <div>
+    <label for="fname" class="block text-sm font-medium text-gray-700">Enter name</label>
+    <input type="text" id="fname" placeholder="Enter first name" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+  </div>
+
+  <div>
+    <label for="lname" class="block text-sm font-medium text-gray-700">Enter surname</label>
+    <input type="text" id="lname" placeholder="Enter last name" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+  </div>
+
+  <div>
+    <label for="no" class="block text-sm font-medium text-gray-700">Enter number</label>
+    <input type="number" id="no" placeholder="Enter no" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+  </div>
+
+  <div>
+    <label for="message" class="block text-sm font-medium text-gray-700">Enter message</label>
+    <input type="text" id="message" placeholder="Enter message" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+  </div>
+  
+
+
+  <div class="text-center">
+    <button type="submit" class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300">Submit</button>
+  </div>
+</form>
+
+    
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+<p><h2><SPAN style="color: red;">|</SPAN>Creation</h2></p>            
+<p><b>The Ultimate in Luxury</b>
+                <br>reflects the company's reputation for producing high-end fashion and beauty products that are both timeless and elegant. </p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+           <li><a href="About.html">About US</a></li> 
+            <li><a href="contact.html">Contact US</a></li>
+            
+            </ul>
+        </div>
+  
+  
+      
+            
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 InternShip<span class="ok">Project</span>. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- java Script  -->
+
+   <script>
+  function call() {
+    const email = document.getElementById("email").value;
+    const name = document.getElementById("fname").value;
+    const lname = document.getElementById("lname").value;
+    const no = document.getElementById("no").value;
+    const mes = document.getElementById("message").value;
+
+    const mobile_no = "919322776199";
+    const url = "https://wa.me/" + 919322776199;
+    const text = encodeURIComponent(
+      `My name is: ${name} ${lname}\nEmail: ${email}\nPhone: ${no}\nMessage: ${mes}\n `
+    );
+
+    window.open(`${url}?text=${text}`, "_blank");
+  }
+</script>
+
+
+</body>
+  </html>
